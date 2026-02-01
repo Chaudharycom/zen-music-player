@@ -2,52 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Zen Music Player</title>
+  <title>Zen Music Player | Dr. Navin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       display: flex;
-      align-items: center;
       justify-content: center;
-      font-family: Arial, sans-serif;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #fff;
     }
 
-    .player {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 25px;
-      border-radius: 16px;
+    .music-card {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 20px;
       text-align: center;
-      width: 300px;
+      width: 320px;
       backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
     }
 
-    .player h2 {
+    .music-card h2 {
       margin-bottom: 15px;
-      font-weight: 500;
     }
 
     audio {
       width: 100%;
       outline: none;
+      margin-top: 15px;
+    }
+
+    .note {
+      font-size: 0.8rem;
+      margin-top: 10px;
+      color: #a0c4ff;
     }
   </style>
 </head>
-
 <body>
-  <div class="player">
+  <div class="music-card">
     <h2>🎵 Zen Music Player</h2>
+    <div class="note">Dr. Navin Chaudhary</div>
 
     <audio controls>
-      <source src="Hasina_ho_pasina_ho_tu_to_nagin_wala_dance_karelu_128kbps.mp3" type="audio/mpeg">
-      Your browser does not support audio.
+      <source src="abcdp.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
     </audio>
-
   </div>
 </body>
 </html>
